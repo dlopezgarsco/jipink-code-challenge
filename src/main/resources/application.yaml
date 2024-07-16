@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: jipink-code-challenge
+  h2:
+    console:
+      enabled: true
+  r2dbc:
+    username: sa
+    url: r2dbc:h2:mem:bank
+    password:
+    dbname: bank
+  flyway:
+    username: sa
+    url: jdbc:h2:mem:bank;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    password:
+    dbname: bank
